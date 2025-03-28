@@ -69,7 +69,7 @@ docker stop mongo10
 db.cliente.insertOne({ codigo: 7, nome: "Tangerina" });
 
 # Conecte-se ao novo nó primário (porta 27018) (MongoDB)
-mongodb://127.0.0.1:27018/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2
+mongodb://127.0.0.1:27019/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2
 
 # Verifique o status do conjunto de réplicas e o novo nó primário
 docker exec -it mongo20 mongosh --eval "rs.status()"
